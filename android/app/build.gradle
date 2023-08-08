@@ -54,7 +54,14 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
-
+ signingConfigs {
+        release {
+            keyAlias 'key'
+            keyPassword 'Bonnah'
+          storeFile file("C:\\Users\\BONNAH\\Documents\\frenchify\\key.jks")
+            storePassword 'Bonnah'
+        }
+    }
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
